@@ -1,33 +1,59 @@
 [gd_scene format=3 uid="uid://67aeponhjr75"]
 
 [ext_resource type="Script" uid="uid://bc3ayxfckeixv" path="res://pet.gd" id="1_5bqq7"]
-[ext_resource type="Texture2D" uid="uid://42774f075ebs" path="res://assets/Mouse Sprites/New Piskel-1.png.png" id="1_j8hq5"]
-[ext_resource type="Texture2D" uid="uid://c42l6njrkwryt" path="res://assets/Mouse Sprites/New Piskel-2.png.png" id="2_5bqq7"]
-[ext_resource type="Texture2D" uid="uid://cowtfm3vhf54o" path="res://assets/Mouse Sprites/New Piskel-3.png.png" id="3_qae7j"]
-[ext_resource type="Texture2D" uid="uid://c2exq6uf533wa" path="res://assets/Mouse Sprites/New Piskel-4.png.png" id="4_uvuc8"]
+[ext_resource type="Texture2D" uid="uid://rrbk8qy473k4" path="res://assets/Hedgehog5.png" id="2_uvuc8"]
+[ext_resource type="Texture2D" uid="uid://iw26uokb7ohq" path="res://assets/Hedgehog6.png" id="3_x5jns"]
+[ext_resource type="Texture2D" uid="uid://bbyxpd0c4mtad" path="res://assets/Hedgehog1.png" id="4_w32yi"]
+[ext_resource type="Texture2D" uid="uid://cy0hwirdfua6d" path="res://assets/Hedgehog2.png" id="5_us1xf"]
+[ext_resource type="Texture2D" uid="uid://d3hkqtk37j1w1" path="res://assets/Hedgehog4.png" id="6_621w0"]
+[ext_resource type="Texture2D" uid="uid://pgg7ytkwilav" path="res://assets/Hedgehog3.png" id="7_qqo4d"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_lxak2"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_j8hq5")
-}, {
-"duration": 1.0,
-"texture": ExtResource("2_5bqq7")
+"texture": ExtResource("2_uvuc8")
 }],
 "loop": 1,
-"name": &"default",
+"name": &"fell",
 "speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_qae7j")
-}, {
-"duration": 1.0,
-"texture": ExtResource("4_uvuc8")
+"texture": ExtResource("3_x5jns")
 }],
 "loop": 1,
-"name": &"new_animation",
+"name": &"flower",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_w32yi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_us1xf")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_621w0")
+}],
+"loop": 1,
+"name": &"love",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_w32yi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_qqo4d")
+}],
+"loop": 1,
+"name": &"walk",
 "speed": 5.0
 }]
 
@@ -36,7 +62,7 @@ script = ExtResource("1_5bqq7")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=805334099]
 sprite_frames = SubResource("SpriteFrames_lxak2")
-animation = &"new_animation"
+animation = &"flower"
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1491016063]
 
